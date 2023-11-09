@@ -11,11 +11,16 @@ document.onmousemove = (event) => {
 };
 
 for (let i = 0; i < balls.length; i++) {
+  balls[i].setAttribute('data-color', 'black'); // Set initial color to black
   balls[i].addEventListener('click', () => {
-    if (balls[i].style.backgroundColor === 'red') {
+    if (balls[i].getAttribute('data-color') === 'red') {
       balls[i].style.backgroundColor = 'black';
+      balls[i].setAttribute('data-color', 'black');
     } else {
       balls[i].style.backgroundColor = 'red';
+      balls[i].setAttribute('data-color', 'red');
     }
   });
 }
+
+//we use data-color to keep track of the current color. When ball is clicked the event listener determines then existing attribute color and toggles it. 
