@@ -1,6 +1,6 @@
 # Eye Movement
 ## Description
-### Showcase eyemovent with the cursor. Eyes will turn red upon click. 
+### Showcase eyemovent with the cursor. Eyes will turn red upon click on the eye. 
 ## Improvement
 ### Eyes turning red on click
 ## Roadmap
