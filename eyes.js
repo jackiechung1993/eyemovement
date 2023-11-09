@@ -12,6 +12,10 @@ document.onmousemove = (event) => {
 
 for (let i = 0; i < balls.length; i++) {
   balls[i].addEventListener('click', () => {
-    balls[i].style.backgroundColor = 'red';
+    if (balls[i].style.backgroundColor === 'red') {
+      balls[i].style.backgroundColor = 'black';
+    } else {
+      balls[i].style.backgroundColor = 'red';
+    }
   });
 }
